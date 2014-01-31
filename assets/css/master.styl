@@ -1,0 +1,46 @@
+@import '_settings'
+
+normalize-css()
+base()
+
+img
+  max-width: 100%
+
+#modal
+  display: none
+  width: 65%
+  background: #fff
+  border-radius: 0px
+  box-shadow: 0 0 10px #000
+
+
+a.close-modal
+  display: none
+
+body
+  padding: 10px
+
+  ul
+    padding: 10px
+    inline-list(spacing = 2em)
+
+  .story
+    center(1200px)
+    background: purple
+    margin-bottom: 2em
+
+  .pic
+    col(1/3)
+    background: green
+    +below(700px)
+      col()
+
+  .text
+    col(2/3)
+    background: papayawhip
+    +below(700px)
+      col()
+
+  .secondary
+    center(1200px)
+
