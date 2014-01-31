@@ -1,0 +1,73 @@
+		@font-face {
+	    font-family: 'OstrichSansCondensedLight';
+	    src: url('fonts/ostrich-light-webfont.eot');
+	    src: url('fonts/ostrich-light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/ostrich-light-webfont.woff') format('woff'),
+	         url('fonts/ostrich-light-webfont.ttf') format('truetype'),
+	         url('fonts/ostrich-light-webfont.svg#OstrichSansCondensedLight') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	    }
+
+	    @font-face {
+	    font-family: 'OstrichSansMedium';
+	    src: url('ostrich-regular-webfont.eot');
+	    src: url('ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('ostrich-regular-webfont.woff') format('woff'),
+	         url('ostrich-regular-webfont.ttf') format('truetype'),
+	         url('ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	    }
+
+	    @font-face {
+	    font-family: 'OstrichSansBold';
+	    src: url('ostrich-bold-webfont.eot');
+	    src: url('ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('ostrich-bold-webfont.woff') format('woff'),
+	         url('ostrich-bold-webfont.ttf') format('truetype'),
+	         url('ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	    }
+
+	    @font-face {
+	    font-family: 'OstrichSansBlack';
+	    src: url('httpfonts/ostrich-black-webfont.eot');
+	    src: url('httpfonts/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('httpfonts/ostrich-black-webfont.woff') format('woff'),
+	         url('httpfonts/ostrich-black-webfont.ttf') format('truetype'),
+	         url('httpfonts/ostrich-black-webfont.svg#OstrichSansBlack') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	
+	    }
+
+	    @font-face {
+	    font-family: 'OstrichSansRoundedMedium';
+	    src: url('ostrich-rounded-webfont.eot');
+	    src: url('ostrich-rounded-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('ostrich-rounded-webfont.woff') format('woff'),
+	         url('ostrich-rounded-webfont.ttf') format('truetype'),
+	         url('ostrich-rounded-webfont.svg#OstrichSansRoundedMedium') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	    }
+
+	    @font-face {
+	    font-family: 'OstrichSansDashedMedium';
+	    src: url('ostrich-dashed-webfont.eot');
+	    src: url('ostrich-dashed-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('ostrich-dashed-webfont.woff') format('woff'),
+	         url('ostrich-dashed-webfont.ttf') format('truetype'),
+	         url('ostrich-dashed-webfont.svg#OstrichSansDashedMedium') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	    }
+
+
