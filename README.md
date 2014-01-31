@@ -1,6 +1,6 @@
-# Roots Template: ex3
+# Tush Records v2
 
-test
+A radical new design is coming soon.
 
 Setup
 -----
@@ -9,5 +9,6 @@ Setup
 - clone this repo down and `cd` into the folder
 - run `npm install`
 - run `roots watch`
-- ???
-- get money
+- call your mom
+- make your bed
+- choose the right
