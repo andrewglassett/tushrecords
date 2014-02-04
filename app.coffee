@@ -4,7 +4,7 @@ rupture      = require 'rupture'
 grate      	 = require 'grate'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*']
+  ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore']
 
   stylus:
     use: [axis(), rupture(), grate(), autoprefixer()]

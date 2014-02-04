@@ -1,26 +1,38 @@
-body .story,
-body .pic,
-body .text,
-body .secondary {
+#home .release,
+#home .release .pic,
+#home .release .text,
+#home .release .player,
+#team .member,
+#team .member .pic,
+#team .member .description {
   *zoom: 1;
 }
 
-body .story:before,
-body .pic:before,
-body .text:before,
-body .secondary:before,
-body .story:after,
-body .pic:after,
-body .text:after,
-body .secondary:after {
+#home .release:before,
+#home .release .pic:before,
+#home .release .text:before,
+#home .release .player:before,
+#team .member:before,
+#team .member .pic:before,
+#team .member .description:before,
+#home .release:after,
+#home .release .pic:after,
+#home .release .text:after,
+#home .release .player:after,
+#team .member:after,
+#team .member .pic:after,
+#team .member .description:after {
   content: '';
   display: table;
 }
 
-body .story:after,
-body .pic:after,
-body .text:after,
-body .secondary:after {
+#home .release:after,
+#home .release .pic:after,
+#home .release .text:after,
+#home .release .player:after,
+#team .member:after,
+#team .member .pic:after,
+#team .member .description:after {
   clear: both;
 }
 
@@ -298,6 +310,12 @@ body {
   font-size-adjust: auto;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 }
@@ -315,50 +333,93 @@ a.close-modal {
   display: none;
 }
 
-body {
-  padding: 10px;
+header {
+  background: #ff6347;
+  position: fixed;
+  width: 100%;
 }
 
-body ul {
-  padding: 10px;
+header nav {
+  padding: 20px;
+}
+
+header nav ul {
   margin: 0;
   padding: 0;
+  float: right;
 }
 
-body ul:before,
-body ul:after {
+header nav ul:before,
+header nav ul:after {
   content: "";
   display: table;
 }
 
-body ul:after {
+header nav ul:after {
   clear: both;
 }
 
-body ul li {
+header nav ul li {
   float: left;
   margin-right: 2em;
   list-style-type: none;
 }
 
-body ul li:last-child {
+header nav ul li:last-child {
   margin-right: 0;
 }
 
-body .story {
+footer {
+  padding: 20px;
+  height: 50px;
+  margin-top: 20px;
+  background: #808080;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+footer ul:before,
+footer ul:after {
+  content: "";
+  display: table;
+}
+
+footer ul:after {
+  clear: both;
+}
+
+footer ul li {
+  float: left;
+  margin-right: 2em;
+  list-style-type: none;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+#home {
+  padding-top: 75px;
+}
+
+#home .release {
   width: auto;
-  max-width: 1200px;
+  max-width: 1410px;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  background: #b10dc9;
   margin-bottom: 2em;
+  background: #ffefd5;
 }
 
-body .pic {
+#home .release .pic {
   float: left;
   display: inline;
   clear: none;
@@ -371,12 +432,12 @@ body .pic {
   background: #2ecc40;
 }
 
-body .pic:last-child {
+#home .release .pic:last-child {
   margin-right: 0%;
 }
 
 @media only screen and (max-width: 700px) {
-  body .pic {
+  #home .release .pic {
     float: left;
     display: inline;
     clear: none;
@@ -388,30 +449,30 @@ body .pic:last-child {
     margin-right: 3%;
   }
 
-  body .pic:last-child {
+  #home .release .pic:last-child {
     margin-right: 0%;
   }
 }
 
-body .text {
+#home .release .text {
   float: left;
   display: inline;
   clear: none;
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 65.66666666666666%;
+  width: 31.33333333333333%;
   margin-left: 0%;
   margin-right: 3%;
-  background: #ffefd5;
+  padding-top: 10%;
 }
 
-body .text:last-child {
+#home .release .text:last-child {
   margin-right: 0%;
 }
 
 @media only screen and (max-width: 700px) {
-  body .text {
+  #home .release .text {
     float: left;
     display: inline;
     clear: none;
@@ -423,18 +484,73 @@ body .text:last-child {
     margin-right: 3%;
   }
 
-  body .text:last-child {
+  #home .release .text:last-child {
     margin-right: 0%;
   }
 }
 
-body .secondary {
+@media only screen and (max-width: 700px) {
+  #home .release .player {
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+
+  #home .release .player:last-child {
+    margin-right: 0%;
+  }
+}
+
+#team {
+  padding-top: 50px;
+}
+
+#team .member {
   width: auto;
-  max-width: 1200px;
+  max-width: 1410px;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  background: #808080;
+}
+
+#team .member .pic {
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+#team .member .pic:last-child {
+  margin-right: 0%;
+}
+
+#team .member .description {
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+#team .member .description:last-child {
+  margin-right: 0%;
 }
