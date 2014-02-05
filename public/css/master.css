@@ -4,7 +4,8 @@
 #home .release .player,
 #team .member,
 #team .member .pic,
-#team .member .description {
+#team .member .description,
+#videos .video {
   *zoom: 1;
 }
 
@@ -15,13 +16,15 @@
 #team .member:before,
 #team .member .pic:before,
 #team .member .description:before,
+#videos .video:before,
 #home .release:after,
 #home .release .pic:after,
 #home .release .text:after,
 #home .release .player:after,
 #team .member:after,
 #team .member .pic:after,
-#team .member .description:after {
+#team .member .description:after,
+#videos .video:after {
   content: '';
   display: table;
 }
@@ -32,7 +35,8 @@
 #home .release .player:after,
 #team .member:after,
 #team .member .pic:after,
-#team .member .description:after {
+#team .member .description:after,
+#videos .video:after {
   clear: both;
 }
 
@@ -302,7 +306,7 @@ body {
 }
 
 body {
-  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-family: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -318,6 +322,42 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a.btn {
+  font-size: 18px;
+  padding: 14px 30px;
+  border-radius: 4px;
+  background-color: #0074d9;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.btn:hover,
+a.btn:focus {
+  background-color: #006ece;
+  color: #f7f7f7;
+}
+
+a.btn:active {
+  background-color: #0068c3;
+}
+
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+  color: #0074d9;
 }
 
 #modal {
@@ -553,4 +593,22 @@ footer ul li:last-child {
 
 #team .member .description:last-child {
   margin-right: 0%;
+}
+
+#videos {
+  padding-top: 50px;
+}
+
+#videos .video {
+  background: #808080;
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 20px;
+  margin-bottom: 10px;
 }

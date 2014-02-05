@@ -1,19 +1,22 @@
 doctype html
 html
   head
-    meta(charset='utf8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='description', content='description of your site')
-    meta(name='author', content= "author of the site")
+    include ../partials/_meta
+
     title= path
-    link(rel='stylesheet', href='css/master.css')
+
+    link(rel='stylesheet', href='/css/master.css')
+    script(type="text/javascript" src="//use.typekit.net/clt8rma.js")
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script    
   body
     header
-      include _header
+
+      include ../partials/_nav
       
     block content
 
     footer
-      include _footer
+
+      include ../partials/_footer
 
   script(data-main="js/main", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js")

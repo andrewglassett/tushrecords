@@ -1,13 +1,20 @@
 require.config
   paths:
     jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min'
+    fitvid: '/js/vendor/fitvids'
     modal: '/js/vendor/modal.min'
 
+
   shim:
+    fitvid:
+      deps: ['jquery']
     modal:
       deps: ['jquery']
 
-require ['jquery', 'modal'], ($) ->
+require ['jquery', 'fitvid', 'modal'], ($) ->
+
+  $('.video, #modal').fitVids()
+
   #open modal
   $('#play-video').on 'click', -> $('#modal').modal()
 

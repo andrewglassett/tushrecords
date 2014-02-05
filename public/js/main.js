@@ -2,16 +2,21 @@
   require.config({
     paths: {
       jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min',
+      fitvid: '/js/vendor/fitvids',
       modal: '/js/vendor/modal.min'
     },
     shim: {
+      fitvid: {
+        deps: ['jquery']
+      },
       modal: {
         deps: ['jquery']
       }
     }
   });
 
-  require(['jquery', 'modal'], function($) {
+  require(['jquery', 'fitvid', 'modal'], function($) {
+    $('.video, #modal').fitVids();
     $('#play-video').on('click', function() {
       return $('#modal').modal();
     });

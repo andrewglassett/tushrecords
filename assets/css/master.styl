@@ -9,6 +9,15 @@ base()
 img
   max-width: 100%
 
+a.btn
+  $button(blue, large)
+
+a, a:visited
+  color: white
+  text-decoration none
+  &:hover
+    color: blue
+
 #modal
   display: none
   width: 65%
@@ -74,3 +83,11 @@ footer
       col(1/2)
     .description
       col(1/2)
+
+#videos
+  padding-top: 50px
+  .video
+    background: grey
+    center(1200px)
+    padding: 20px
+    margin-bottom: 10px
