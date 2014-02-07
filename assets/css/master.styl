@@ -1,0 +1,120 @@
+@import '_settings'
+
+normalize-css()
+base()
+html
+  font-family: 'Droid Sans Mono'
+*
+  box-sizing: border-box
+
+img
+  max-width: 100%
+
+a, a:visited
+  text-decoration: none
+  color: purple
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  &:hover
+    outline: 2px solid purple
+
+a.btn
+  $button(aqua, small)
+  margin: 1em 1em 1em 0em
+  outline: none
+
+h1
+  margin: 0 0 .3em 0
+h4
+  font-size: .7em
+  margin: 0
+
+#modal
+  display: none
+  width: 65%
+  background: #fff
+  border-radius: 0px
+  box-shadow: 0 0 10px black
+
+a.close-modal
+  display: none
+
+header
+  background-color: whitesmoke
+  position: fixed
+  width: 100%
+  box-shadow: 0 0 40px whitesmoke
+  +below(mobile)
+    position: relative
+  nav
+    a
+      padding: 1.5em 1.25em 1.5em 1.25em
+      display: block
+      float: left
+      +below(mobile)
+        float: none
+        text-align: center
+    ul
+      inline-list()
+      float: right
+      +below(mobile)
+        text-align: center
+        float: none
+      li
+        margin: 0
+        +below(mobile)
+          width: 100% 
+        a, a:visited
+          padding: 1.5em 1.25em 1.5em 1.25em
+          cursor: pointer
+          display: block
+          &:hover
+            background: yellow;
+          +below(mobile)
+            width: 100% 
+            padding: 1em
+
+footer
+  padding: 40px
+  box-shadow: 40px 0 0 whitesmoke
+  ul  
+    inline-list(spacing = 2em)
+    float: left
+    padding: 0 0 2em 0
+
+#home, #team
+  padding: 5em 1em
+  +below(mobile)
+    padding: 2em 1em
+  .release, .member
+    margin: 4em 0
+    +below(mobile)
+      margin: 0em
+    center()
+    .pic
+      col(1/2)
+      +below(800px)
+        col()
+    .text
+      col(1/2)
+      +below(800px)
+        col()
+
+  h4>span 
+    background: whitesmoke
+    padding: .5em .5em
+    margin: 0 0 0 .5em
+  .meta.date
+    margin-bottom: .3em
+
+#videos
+  padding: 5em 1em
+  +below(mobile)
+    padding: 2em 1em
+  .video
+    background: whitesmoke
+    center(1200px)
+    padding: 20px
+    margin-bottom: 10px
+

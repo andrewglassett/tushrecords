@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    include ../partials/_meta
+
+    title= path
+
+    link(rel='stylesheet', href='css/master.css')
+    link(href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css')
+  body
+    header
+
+      include ../partials/_nav
+      
+    block content
+
+    footer
+    
+      include ../partials/_footer
+
+  script(data-main="js/main", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js")
