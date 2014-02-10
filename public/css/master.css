@@ -360,7 +360,7 @@ a:visited {
 
 a:hover,
 a:visited:hover {
-  outline: 2px solid #b10dc9;
+  border-bottom: 2px solid #b10dc9;
 }
 
 a.btn {
@@ -485,12 +485,13 @@ header nav ul li {
 header nav ul li a,
 header nav ul li a:visited {
   padding: 1.5em 1.25em 1.5em 1.25em;
-  cursor: pointer;
+  cursor: crosshair;
   display: block;
 }
 
 header nav ul li a:hover,
 header nav ul li a:visited:hover {
+  border-bottom: none;
   background: #f7fe88;
 }
 
@@ -503,16 +504,16 @@ header nav ul li a:visited:hover {
 }
 
 footer {
-  padding: 40px;
   -webkit-box-shadow: 40px 0 0 #f5f5f5;
   box-shadow: 40px 0 0 #f5f5f5;
+  background: #f5f5f5;
+  display: block;
 }
 
 footer ul {
   margin: 0;
   padding: 0;
   float: left;
-  padding: 0 0 2em 0;
 }
 
 footer ul:before,
@@ -527,12 +528,50 @@ footer ul:after {
 
 footer ul li {
   float: left;
-  margin-right: 2em;
+  margin-right: 20px;
   list-style-type: none;
 }
 
 footer ul li:last-child {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  footer ul {
+    text-align: center;
+    float: none;
+  }
+}
+
+footer ul li {
+  margin: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  footer ul li {
+    width: 100%;
+  }
+}
+
+footer ul li a,
+footer ul li a:visited {
+  padding: 1.5em 1.25em 1.5em 1.25em;
+  cursor: crosshair;
+  display: block;
+}
+
+footer ul li a:hover,
+footer ul li a:visited:hover {
+  background: #f7fe88;
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 400px) {
+  footer ul li a,
+  footer ul li a:visited {
+    width: 100%;
+    padding: 1em;
+  }
 }
 
 #home,

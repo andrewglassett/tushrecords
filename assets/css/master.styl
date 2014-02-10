@@ -17,7 +17,7 @@ a, a:visited
   -moz-transition: all .2s linear;
   transition: all .2s linear;
   &:hover
-    outline: 2px solid purple
+    border-bottom: 2px solid purple
 
 a.btn
   $button(aqua, small)
@@ -67,21 +67,39 @@ header
           width: 100% 
         a, a:visited
           padding: 1.5em 1.25em 1.5em 1.25em
-          cursor: pointer
+          cursor: crosshair
           display: block
           &:hover
+            border-bottom: none
             background: yellow;
           +below(mobile)
             width: 100% 
             padding: 1em
 
 footer
-  padding: 40px
   box-shadow: 40px 0 0 whitesmoke
-  ul  
-    inline-list(spacing = 2em)
+  background: whitesmoke
+  display: block
+  ul
+    inline-list()
     float: left
-    padding: 0 0 2em 0
+    +below(mobile)
+      text-align: center
+      float: none
+    li
+      margin: 0
+      +below(mobile)
+        width: 100% 
+      a, a:visited
+        padding: 1.5em 1.25em 1.5em 1.25em
+        cursor: crosshair
+        display: block
+        &:hover
+          background: yellow;
+          border-bottom: none
+        +below(mobile)
+          width: 100% 
+          padding: 1em
 
 #home, #team
   padding: 5em 1em
