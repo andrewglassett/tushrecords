@@ -1,62 +1,38 @@
+#home,
 #home .release,
-#team .release,
-#home .member,
-#team .member,
 #home .release .pic,
-#team .release .pic,
-#home .member .pic,
-#team .member .pic,
 #home .release .text,
-#team .release .text,
-#home .member .text,
-#team .member .text,
-#videos .video {
+#index,
+#index .artists,
+#index .distro {
   *zoom: 1;
 }
 
+#home:before,
 #home .release:before,
-#team .release:before,
-#home .member:before,
-#team .member:before,
 #home .release .pic:before,
-#team .release .pic:before,
-#home .member .pic:before,
-#team .member .pic:before,
 #home .release .text:before,
-#team .release .text:before,
-#home .member .text:before,
-#team .member .text:before,
-#videos .video:before,
+#index:before,
+#index .artists:before,
+#index .distro:before,
+#home:after,
 #home .release:after,
-#team .release:after,
-#home .member:after,
-#team .member:after,
 #home .release .pic:after,
-#team .release .pic:after,
-#home .member .pic:after,
-#team .member .pic:after,
 #home .release .text:after,
-#team .release .text:after,
-#home .member .text:after,
-#team .member .text:after,
-#videos .video:after {
+#index:after,
+#index .artists:after,
+#index .distro:after {
   content: '';
   display: table;
 }
 
+#home:after,
 #home .release:after,
-#team .release:after,
-#home .member:after,
-#team .member:after,
 #home .release .pic:after,
-#team .release .pic:after,
-#home .member .pic:after,
-#team .member .pic:after,
 #home .release .text:after,
-#team .release .text:after,
-#home .member .text:after,
-#team .member .text:after,
-#videos .video:after {
+#index:after,
+#index .artists:after,
+#index .distro:after {
   clear: both;
 }
 
@@ -367,7 +343,7 @@ a.btn {
   font-size: 10px;
   padding: 8px 17px;
   border-radius: 2px;
-  background-color: #7fdbff;
+  background-color: #fff;
   color: #494949;
   cursor: pointer;
   font-weight: bold;
@@ -377,21 +353,31 @@ a.btn {
   text-decoration: none;
   display: inline-block;
   margin: 1em 1em 1em 0em;
-  outline: none;
+  padding: 1em;
+  color: #b10dc9;
+  border: 1px dotted #b10dc9;
+  border-radius: 4px;
+  font-size: 0.75em;
 }
 
 a.btn:hover,
 a.btn:focus {
-  background-color: #6cd6ff;
+  background-color: #f2f2f2;
   color: #474747;
 }
 
 a.btn:active {
-  background-color: #59d0ff;
+  background-color: #e6e6e6;
+}
+
+a.btn:hover {
+  background: #b10dc9;
+  color: #fff;
 }
 
 h1 {
   margin: 0 0 0.3em 0;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -432,8 +418,12 @@ header nav a {
   float: left;
 }
 
+header nav span a {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 500px) {
-  header nav a {
+  header nav span {
     float: none;
     text-align: center;
   }
@@ -571,23 +561,27 @@ footer ul li a:visited:hover {
   }
 }
 
-#home,
-#team {
+#home {
   padding: 5em 1em;
+  width: auto;
+  max-width: 1000px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media only screen and (max-width: 500px) {
-  #home,
-  #team {
-    padding: 2em 1em;
+  #home {
+    padding: 0em;
   }
 }
 
-#home .release,
-#team .release,
-#home .member,
-#team .member {
-  margin: 4em 0;
+#home .release {
+  border: 1px dotted #b10dc9;
+  margin: 2em 0;
   width: auto;
   max-width: 1410px;
   float: none;
@@ -599,41 +593,29 @@ footer ul li a:visited:hover {
 }
 
 @media only screen and (max-width: 500px) {
-  #home .release,
-  #team .release,
-  #home .member,
-  #team .member {
-    margin: 0em;
+  #home .release {
+    margin: 2em 0.5em;
   }
 }
 
-#home .release .pic,
-#team .release .pic,
-#home .member .pic,
-#team .member .pic {
+#home .release .pic {
   float: left;
   display: inline;
   clear: none;
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 48.5%;
+  width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
 }
 
-#home .release .pic:last-child,
-#team .release .pic:last-child,
-#home .member .pic:last-child,
-#team .member .pic:last-child {
+#home .release .pic:last-child {
   margin-right: 0%;
 }
 
 @media only screen and (max-width: 800px) {
-  #home .release .pic,
-  #team .release .pic,
-  #home .member .pic,
-  #team .member .pic {
+  #home .release .pic {
     float: left;
     display: inline;
     clear: none;
@@ -645,41 +627,44 @@ footer ul li a:visited:hover {
     margin-right: 3%;
   }
 
-  #home .release .pic:last-child,
-  #team .release .pic:last-child,
-  #home .member .pic:last-child,
-  #team .member .pic:last-child {
+  #home .release .pic:last-child {
     margin-right: 0%;
   }
 }
 
-#home .release .text,
-#team .release .text,
-#home .member .text,
-#team .member .text {
+#home .release .text {
   float: left;
   display: inline;
   clear: none;
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 48.5%;
+  width: 79.4%;
   margin-left: 0%;
   margin-right: 3%;
+  padding: 1em;
 }
 
-#home .release .text:last-child,
-#team .release .text:last-child,
-#home .member .text:last-child,
-#team .member .text:last-child {
+#home .release .text:last-child {
   margin-right: 0%;
 }
 
+#home .release .text .meta {
+  padding: 0em 0em;
+}
+
+#home .release .text .meta .links ul {
+  margin: 0;
+  padding: 0;
+}
+
+#home .release .text .meta .links ul li {
+  display: inline-block;
+  margin: 1em 0em;
+}
+
 @media only screen and (max-width: 800px) {
-  #home .release .text,
-  #team .release .text,
-  #home .member .text,
-  #team .member .text {
+  #home .release .text {
     float: left;
     display: inline;
     clear: none;
@@ -689,48 +674,79 @@ footer ul li a:visited:hover {
     width: 100%;
     margin-left: 0%;
     margin-right: 3%;
+    padding: 1em;
   }
 
-  #home .release .text:last-child,
-  #team .release .text:last-child,
-  #home .member .text:last-child,
-  #team .member .text:last-child {
+  #home .release .text:last-child {
     margin-right: 0%;
   }
 }
 
-#home h4>span,
-#team h4>span {
+#home h4>span {
   background: #f5f5f5;
   padding: 0.5em 0.5em;
   margin: 0 0 0 0.5em;
 }
 
-#home .meta.date,
-#team .meta.date {
+#home .meta.date {
   margin-bottom: 0.3em;
 }
 
-#videos {
-  padding: 5em 1em;
+#home .about {
+  padding: 2em;
 }
 
-@media only screen and (max-width: 500px) {
-  #videos {
-    padding: 2em 1em;
-  }
-}
-
-#videos .video {
-  background: #f5f5f5;
-  width: auto;
-  max-width: 1200px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+#index {
+  margin-top: 5em;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  padding: 20px;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+#index:last-child {
+  margin-right: 0%;
+}
+
+#index .artists {
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 50%;
+  background: #d13f19;
+  margin: 0;
+}
+
+#index .artists:last-child {
+  margin-right: 0%;
+}
+
+#index .distro {
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 50%;
+  background: #0074d9;
+  margin: 0;
+}
+
+#index .distro:last-child {
+  margin-right: 0%;
 }
