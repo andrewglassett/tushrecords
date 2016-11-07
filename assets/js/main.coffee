@@ -25,4 +25,4 @@ require ['jquery', 'fitvid', 'modal'], ($) ->
     $('.fluid-width-video-wrapper').append(iframe)
 
   #close modal with esc key
-  $(document).keyup (e) -> $.modal.close() if e.keyCode is 27
+  $(document).keyup (e) -> $.modal.close() if e.keyCode is 27 
