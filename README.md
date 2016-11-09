@@ -1,6 +1,6 @@
-# Tush Records v2
+# Tush Records
 
-A radical new design is coming soon.
+A listing of our current releases and distro. Hosted at [TushRecords.com](http://tushrecords.com)
 
 Setup
 -----

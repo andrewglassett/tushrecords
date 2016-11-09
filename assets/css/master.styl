@@ -53,11 +53,14 @@ header
   position: fixed
   width: 100%
   box-shadow: 0 0 40px whitesmoke
-  +below(mobile)
-    position: relative
+  // +below(mobile)
+  //   position: relative
   nav
     a
-      padding: 1.5em 1.25em 1.5em 1.25em
+      padding: 1.5em 1.25em
+      +below(mobile)
+        padding: 1em
+
       display: block
       float: left
     span
@@ -113,7 +116,7 @@ footer
   padding: 5em 1em
   center(1000px)
   +below(mobile)
-    padding: 0em
+    padding: 2em 0
   .release
     border: 1px dotted purple
     margin: 2em 0
